@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <style>
         body {
             font: 400 15px Lato, sans-serif;
@@ -34,6 +36,19 @@
             color: #0f0f0f;
             font-weight: 600;
             margin-bottom: 30px;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h3{
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #0f0f0f;
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
@@ -337,6 +352,7 @@
             margin-right: auto;
             align-items: center;
             text-align: center;
+            margin-top: 80px;
         }
 
         .imagensmeio {
@@ -372,6 +388,64 @@
         .essesdois {
             margin-top: 90px;
         }
+        .features .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.features .box-container .box{
+    flex:1 1 30rem;
+    background:#fff;
+    border-radius: .5rem;
+    border:.1rem solid rgba(165, 94, 94, 0.2);
+    box-shadow: 0 .5rem 1rem rgba(226, 6, 6, 0.1);
+    margin:1.5rem;
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: .2s linear;
+}
+
+.features .box-container .box img{
+    height: 15rem;
+}
+
+.features .box-container .box h3{
+    font-size: 2rem;
+    color:#333;
+    padding-top: 1rem;
+}
+
+.features .box-container .box p{
+    font-size: 1.3rem;
+    color:#666;
+    padding: 1rem 0;
+}
+.heading{
+    text-align: center;
+    background:var(--gradient);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: 5rem;
+    background:var(--gradient);
+    font-size: 1.7rem;
+    color:#fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
     </style>
 </head>
 
@@ -402,7 +476,7 @@
 
     <div class="jumbotron text-center">
 
-        <h1>Good jobs</h1>
+       
 
         <form>
             <div class="imagem">
@@ -501,51 +575,51 @@
 
         </div>
     </div>
+    <h2>𝑮𝒐𝒐𝒅 𝒋𝒐𝒃𝒔</h2>
+    <h3>Adequando soluções ao ritmo que você precisa</h3>
 
-
-
-
+    <h3>Nossos Serviços:</h3>
+   
     <!-- Container (Portfolio Section) -->
-    <div id="portfolio" class="container-fluid text-center bg-grey">
-        <h2>NOSSOS SERVIÇOS</h2><br>
-        <h4>VEJAM ALGUNS DE NOSSOS SERVIÇOS</h4>
-        <div class="slide2">
-            <div class="row text-center slideanim">
-                <div class="col-sm-3">
-                    <div class="thumbnail">
+    <section class="features" id="features">
 
-                        <h5> <strong>SERVIÇOS DOMÉSTICOS</strong></h5>
-                        <div class="idiot">
-                            <img src="img/domestica.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="thumbnail">
-                        <h5> <strong>ENCANADOR</strong></h5>
-                        <div class="idiot">
-                            <img src="img/encanador.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="thumbnail">
-                        <h5> <strong>LIMPEZA DE PISCINAS</strong></h5>
+       
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="img/faztudo.webp" alt="">
+                <h3>ENCANADOR</h3>
+                <p>Instalar e prover a manutenção de sistemas hidráulicos (água e esgoto) de residências, estabelecimentos e indústrias.
 
-                        <div class="idiot">
-                            <img src="img/piscina.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div><br>
-        </div>
-
-
+                    Estão presentes no cotidiano do encanador: o manejo de encanamentos, tubulações, caixas d’água, torneiras, vasos sanitários, caixas de esgoto, ralos, reservatórios, pias e tanques. </p>
+                
+            </div>
+    
+            <div class="box">
+                <img src="img/limpeza.jpg" alt="">
+                <h3>ELETRICISTA</h3>
+                <p>Realiza manutenção preventiva e corretiva, instalação de quadros de distribuição de força e analisa consumo de energia, ligação e desligamento de aparelhos elétricos e eletrônicos. Identifica defeitos elétricos para reparar ou substituir componentes, ajustando peças e simulando o funcionamento dos equipamentos.</p>
+               
+            </div>
+    
+            <div class="box">
+                <img src="img/sofa.jpg" alt="">
+                <h3>LIMPEZA E IMPERMEABILIZAÇÃO DE SOFÁ</h3>
+                <p>A impermeabilização de sofá nada mais é do que a aplicação de um produto que garante o fechamento das fibras do tecido e, com isso, bloqueia a passagem de líquidos para o interior do estofado.
+                    É rápido, segura e feita uma única vez. Aqui você encontra os melhores profissionais de limpeza.</p>
+                
+            </div>
+    
+           
+    
+    </section>
 
 
-        <h2>𝑮𝒐𝒐𝒅 𝒋𝒐𝒃𝒔</h2>
-        <h3>Adequando soluções ao ritmo que você precisa.</h3>
-        <div class="carrossel">
+
+
+       
+      <!--  <div class="carrossel">
             <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-interval="2000">
                 <!-- Indicators -->
                 <!--<div class="espaco">
@@ -557,7 +631,7 @@
                 </ol>
             </div>-->
 
-                <!-- Wrapper for slides -->
+                <!-- Wrapper for slides 
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <img src="img/mecanico.png" alt="Sorvete" width="300" height="300">
@@ -584,7 +658,7 @@
                     <span class="sr-only">Next</span>
                 </a>-->
     </div>
-    </div>
+    </div>Bruno lindão.....
 
 
 
@@ -607,9 +681,8 @@
 
 
                     <p>ESTAMOS LOCALIZADOS NESSE ENDEREÇO!</p>
-                    <div style="--aspect-ratio: 16/9;"> <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.356219020248!2d-43.56103518503453!3d-22.900228385015083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be15839e68c4f%3A0x588a284ae162bc38!2sSenac%20Campo%20Grande!5e0!3m2!1spt-BR!2sbr!4v1621259281476!5m2!1spt-BR!2sbr"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div style="--aspect-ratio: 16/9;"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.356219020248!2d-43.56103518503453!3d-22.900228385015083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be15839e68c4f%3A0x588a284ae162bc38!2sSenac%20Campo%20Grande!5e0!3m2!1spt-BR!2sbr!4v1622029386117!5m2!1spt-BR!2sbr"
+                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div> <br>
                     <div class="essesdois">
                         <div class="footer-social" style="background-color:transparent;">
@@ -624,6 +697,7 @@
 
                                         ☺ Copyright - Good jobs</p>
                                 </div>
+								
 
                         </div>
                     </div>
